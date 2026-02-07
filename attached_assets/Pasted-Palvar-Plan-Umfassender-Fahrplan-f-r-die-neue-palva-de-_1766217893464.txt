@@ -1,0 +1,96 @@
+Palvar Plan
+Umfassender Fahrplan für die neue palva.de
+1️⃣ Ziel & Strategie der neuen Website
+Ziel:
+Aktuell: Einnahmen generieren und Kundenkontakte aufbauen über Voranalyse / Immobilien-Check und strategisches Consulting / Property Management, ohne offizielle Energieberatung.
+Langfristig: Offizielle Energieberatung mit Förderfähigkeit (BAFA/KfW) nahtlos anbieten.
+Rechtlich:
+Aktuelle Vorleistungen sind nicht förderfähig.
+Klarstellung auf allen Seiten notwendig: „Diese Voranalyse ersetzt nicht die offizielle Energieberatung und ist nicht förderfähig über BAFA/KfW.“
+Strategisch:
+Kundenkontakte aufbauen, Einnahmen sichern, Vertrauen erzeugen, Netzwerk zeigen.
+Vorbereitung auf spätere Energieberatung und Property Management.
+2️⃣ Struktur & Inhalte der Website
+2.1 Homepage / Startseite
+Hero-Sektion:
+Headline: „Gebäudebewertung & strategisches Immobilien-Consulting“
+Untertitel: „Vorab-Check, Optimierungspotenziale und strategische Empfehlungen – ohne Fördermittelberatung.“
+CTA: „Jetzt Voranalyse anfragen“
+Hinweis: Förderfähigkeit deutlich machen
+Kurzvorstellung: 2–3 Sätze zu dir (Energieberater & Property Manager)
+Leistungen-Teaser: 3 Kacheln / Icons für:
+Voranalyse / Immobilien-Check
+Strategisches Consulting / Management
+Property Management
+Vorteile für Kunden: Flexibel, nachhaltig, transparent, langfristiger Werterhalt
+Testimonials: Platzhalter oder Pilotkunden
+Footer: Kontakt, Impressum, Datenschutz, Social Media
+2.2 Über mich / Über Palvar
+Persönliche Story: Warum Energieberatung & Property Management
+Werte & Vision: Nachhaltigkeit, Effizienz, Werterhalt
+Qualifikationen: Studium, Erfahrung, Weiterbildung
+Netzwerk & Partner: Handwerker, Architekten, Dienstleister
+Professionelles Portraitfoto
+2.3 Leistungen / Services
+Vor-Analyse / Immobilien-Check
+Analyse Gebäudezustand, Verbrauch, Optimierungsmöglichkeiten
+Ergebnis: PDF-Report / Checkliste
+Hinweis: „Keine offizielle Energieberatung, nicht förderfähig“
+Nutzen: Orientierung, Planung, Vorbereitung auf spätere Sanierungsfahrpläne
+Strategisches Consulting / Management
+Organisation, Prozessoptimierung, Koordination von Dienstleistern
+Zielgruppe: Eigentümer, Investoren, Vermieter
+Hinweis: Keine Beraternummer nötig
+Property Management
+Vermietungsmanagement, Dokumentenverwaltung, Handwerkerkoordination, Reporting
+Paketstruktur: Basis vs. erweitert
+Offizielle Energieberatung (zukünftig)
+Beschreibung der späteren Leistung inkl. Fördermittel
+Hinweis: „Derzeit nur Voranalyse & Consulting. Förderfähige Beratung erfolgt nach Berateranmeldung.“
+2.4 Kontakt / Erstgespräch
+Formularfelder: Name, E-Mail, Telefon, Anliegen
+CTA: „Jetzt Erstgespräch vereinbaren“
+Hinweistext Förderfähigkeit
+Kontaktinformationen & Datenschutzhinweis
+2.5 Blog / Wissen / Ratgeber (optional)
+Themen: Energieeinsparung, Immobilienmanagement, organisatorische Tipps
+Keine konkreten Fördermittel posten
+Call-to-Action: „Kontaktieren Sie mich für Voranalyse“
+2.6 Technische & Design-Aspekte
+Bilder optimieren (WebP), Ladezeiten prüfen
+SEO: Meta-Titel, Meta-Beschreibungen, URL-Struktur
+Barrierefreiheit: Alt-Texte, Kontraste, Navigation
+Analytics: Google Analytics oder ähnliches integrieren
+Minimalistisches / nachhaltiges Design
+2.7 Vertrauens- & Netzwerk-Komponenten
+Partnerlogos & Kurzbeschreibungen
+Prozessbeschreibung: Schritt-für-Schritt Erklärung der Voranalyse / Consulting
+Testimonials / Pilotkunden
+3️⃣ Vorgehensweise: Schritt-für-Schritt
+3.1 Planung
+Alle Texte und Pakete definieren
+Call-to-Actions, Hinweise zur Förderfähigkeit vorbereiten
+Bilder / Assets bereitstellen
+Preise & Dauer für Voranalyse und Consulting festlegen
+3.2 Testphase / Vorabprüfung
+Alle neuen Inhalte in eine Testversion einfügen
+Design, Navigation, Buttons, Layout prüfen
+Formulare testen (Kontaktanfragen, Speicherung, E-Mail-Benachrichtigung)
+Blog & SEO testen
+Ladezeiten und Performance prüfen
+3.3 Iteration
+Feedback von Testphase einarbeiten
+Texte optimieren, CTA verbessern, Platzhalter durch echte Inhalte ersetzen
+Technische Optimierungen (Bilder, Caching, Barrierefreiheit) prüfen
+3.4 Live-Schaltung
+Backup der Live-Seite erstellen
+Änderungen manuell übertragen
+Letzte Checks: Links, Formulare, Hinweise zur Förderfähigkeit, Mobil-Ansicht
+4️⃣ Besonderheiten für dich
+Einnahmen & Sicherheit: Voranalyse / Consulting generiert Einnahmen, bevor du offiziell Energieberater bist.
+Rechtliche Sicherheit: Hinweistext zu Förderfähigkeit auf allen Seiten zwingend.
+Schauspielkurs & Selbstständigkeit: Website und Einnahmen ermöglichen parallele Finanzierung deiner Schauspielprojekte.
+Upselling-Möglichkeit: Später Kunden nahtlos in offizielle Energieberatung und Property Management überführen.
+5️⃣ Optional / Nächster Schritt
+Fertige Texte für jede Seite erstellen, die direkt in die Website eingefügt werden können
+Call-to-Actions, Hinweise und Pakete direkt implementieren

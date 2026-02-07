@@ -1,0 +1,54 @@
+Der wirtschaftlichkeitsrechner hat folgendes: Wirtschaftlichkeits-Rechner
+Unsere Tools geben Ihnen eine erste fundierte Einschätzung zur Rentabilität Ihrer Vorhaben. Analysieren Sie die Wirtschaftlichkeit von Sanierungsmaßnahmen, bewerten Sie den Nutzen von professionellem Property Management oder vergleichen Sie Ihre aktuellen Heizkosten mit einer modernen Wärmepumpe.
+Sanierungsrechner:
+Hinweis zur Nutzung
+Dieser Rechner dient der ersten Orientierung. Für eine verbindliche Förder- und Kostenplanung ist eine detaillierte Analyse durch unsere Experten unerlässlich.
+Ihre Eingaben
+Passen Sie die Werte für Ihr Projekt an.
+Allgemeine Parameter
+Wohnfläche (m²)
+Jahresverbrauch (kWh)
+Ihr Energiepreis (€/kWh)
+Preissteigerung p.a. (%)
+Maßnahmen
+MaßnahmeFassadendämmungFassadendämmungDachdämmungFenstertausch (3-fach-Verglasung)Heizungstausch (Wärmepumpe)Lüftungsanlage mit WärmerückgewinnungKellerdeckendämmung
+Investitionskosten (€)
+Fläche (m²)
+Qualität der MaßnahmeStandardStandardPremium
+Weitere Maßnahme
+Ergebnisse berechnenFormular zurücksetzen
+
+
+
+
+Wärmepumpen-Rechner
+Hinweis zur Nutzung
+Dieser Rechner bietet eine vereinfachte Abschätzung auf Basis von Durchschnittswerten. Die tatsächliche Effizienz hängt von Ihrem Gebäude ab.
+Heizkostenvergleich
+Geben Sie Ihre aktuellen Verbrauchsdaten ein.
+Ihr aktuelles HeizsystemÖlheizungÖlheizungGasheizung
+Jährlicher Verbrauch (Liter)
+Ihr Strompreis (€/kWh)
+Erwartete JAZ der Wärmepumpe 
+2,5 (schlechter Altbau)
+3,0 (mäßiger Altbau)
+3,5 (guter Altbau / Sanierung)
+4,0 (sehr gut saniert)
+4,5 (exzellent)
+5,0 (Neubau-Standard)
+Annahmen: 1 Liter Heizöl ≈ 10 kWh, 1 m³ Gas ≈ 10 kWh. Die JAZ (Jahresarbeitszahl) gibt an, wie viele kWh Wärme aus 1 kWh Strom erzeugt werden.
+Ergebnisse berechnen
+Formular zurücksetzen
+
+
+
+PM-Cashflow-Rechner
+Hinweis zur Nutzung
+Dieser Rechner bietet eine erste Abschätzung. Der tatsächliche Nutzen kann durch viele Faktoren (z.B. vermiedene Reparaturkosten, besserer Mieterservice) noch höher ausfallen.
+Ihre Objektdaten
+Passen Sie die Werte für Ihre Situation an.
+Brutto-Jahresmiete (€)
+Mietausfallquote (%) 
+Instandhaltungskosten / Monat (€) 
+Sonstige Kosten / Monat (€) 
+Ergebnisse berechnenFormular zurücksetzen

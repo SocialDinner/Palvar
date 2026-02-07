@@ -1,0 +1,99 @@
+1. Energieberatung
+Themenbezug / Zielsetzung:
+Zielgruppe: Eigentümer, Investoren, Verwalter
+Fokus auf Analyse, Bewertung und Beratung, keine Umsetzung
+Kern: Energieeffizienz, Fördermöglichkeiten, iSFP, Heizlast, Bedarfsausweis
+Inhalte:
+Bestandsaufnahme & Gebäudebewertung
+Analyse von Gebäudehülle, Dämmung, Fenstern, Heizung und Lüftung
+Erkennen von Schwachstellen (Wärmeverluste, ineffiziente Anlagen)
+Kurze Darstellung, wie Daten erhoben werden (z. B. Messungen, Pläne, Vor-Ort-Begehung)
+Bedarfsausweis & Nachweiserstellung
+Erstellung von Energiebedarfsausweisen (GEG-konform)
+Visualisierung des aktuellen Energieverbrauchs
+Erklärung, wofür der Ausweis benötigt wird (Verkauf, Vermietung, Förderung)
+Individueller Sanierungsfahrplan (iSFP)
+Darstellung möglicher Sanierungsmaßnahmen: Dach, Fassade, Fenster, Heizung, Lüftung, PV
+Priorisierung nach Kosten, Einsparungen und Machbarkeit
+Hinweis: Empfehlungen werden nicht umgesetzt, dienen als Entscheidungsgrundlage
+Heizlastberechnung & Fördermittelberatung
+Kurze Erklärung, was Heizlastberechnung ist und warum sie wichtig ist
+Fördermöglichkeiten für einzelne Maßnahmen (BEG, KfW, regionale Förderungen)
+Schritt-für-Schritt Übersicht, wie Förderungen geprüft werden
+Bilder / Visualisierungsvorschläge:
+Gebäude-Illustrationen vor/nach energetischer Optimierung
+Diagramme für Energieverbrauch oder Einsparpotenziale
+Icons für Dämmung, Heizung, PV, Fenster
+Beispiel eines Energieausweises (anonymisiert)
+2. Projektmanagement
+Themenbezug / Zielsetzung:
+Zielgruppe: Eigentümer, Bauherren, Verwalter
+Fokus auf Koordination, Steuerung, Qualitätskontrolle, keine Bauleistung
+Kern: effiziente Umsetzung energetischer Maßnahmen im Neubau oder Bestand
+Inhalte:
+Projektstruktur & Ablaufplanung
+Definition von Meilensteinen und Arbeitspaketen
+Abstimmung mit Fachplanern, Bauherren, ggf. Förderstellen
+Visualisierung: Ablaufdiagramme oder Gantt-Chart
+Termin- und Budgetkontrolle
+Kontrolle der Projektkosten und Zeitpläne
+Beratung bei Abweichungen und Vorschläge zur Optimierung
+Qualitätsprüfung & Dokumentation
+Plausibilitätsprüfung technischer Unterlagen: Heizlastberechnungen, iSFP, Sanierungsfahrpläne
+Erstellung von Berichten für Bauherrn und Förderstellen
+Schnittstellenmanagement
+Koordination zwischen allen Beteiligten (Fachplaner, Energieberater, Eigentümer)
+Visualisierung von Kommunikations- und Entscheidungswegen
+Bilder / Visualisierungsvorschläge:
+Gantt-Charts, Projektpläne, Meilenstein-Grafiken
+Symbolbilder: Meetings, Abstimmungen, Dokumentenprüfung
+Infografik: Schnittstellen zwischen Bauherr, Fachplaner, Förderstelle
+3. Gebäudeservices / Facility & Asset Management
+Themenbezug / Zielsetzung:
+Zielgruppe: Eigentümer, WEG-Verwaltungen, Investoren
+Fokus auf laufenden Gebäudebetrieb, Monitoring, strategische Optimierung
+Kern: Effizienz, Werterhalt, Entscheidungsvorlagen
+Inhalte:
+Energetischer Gebäudebetrieb
+Optimierung laufender Anlagen (Heizung, Warmwasser, Lüftung)
+Tipps zur Reduzierung von Energieverlusten
+Energiecontrolling & Monitoring
+Verbrauchsauswertung, Kennzahlenbildung, Benchmarking
+Darstellung von Einsparpotenzialen
+Strategische Bestandsentwicklung
+Langfristige Sanierungs- und Investitionsstrategie
+Priorisierung energetischer Maßnahmen
+Förderstrategien
+Eigentümer- & Verwaltungsberatung
+Unterstützung bei Entscheidungen für Sanierungen oder energetische Investitionen
+Beratung bei WEG-Beschlüssen oder Portfolioentscheidungen
+Bilder / Visualisierungsvorschläge:
+Dashboard-Visualisierungen / Diagramme für Verbrauch und Einsparungen
+Gebäudeillustrationen mit Anlagen (Heizung, PV, Lüftung)
+Infografik: Lebenszyklus eines Gebäudes / Asset Management
+4. Wissen
+Themenbezug / Zielsetzung:
+Zielgruppe: Eigentümer, Käufer, Investoren
+Fokus auf Fachinformationen, Tools, praktische Hilfen
+Kern: GEG, Förderungen, Bauteile, Praxischeck
+Inhalte:
+A. Gesetz & Förderungen
+Gebäudeenergiegesetz (GEG): Erklärung der Anforderungen
+Förderungen 2024/2025: Übersicht der Programme, Zuschüsse, Voraussetzungen
+B. Bauteile & Praxis-Tools
+Bauteile & Förderung: Dämmung, Fenster, Heizsysteme, PV
+Wirtschaftlichkeitsrechner / CO₂-Rechner: schnelle Berechnung der Einsparungen
+C. Praxis & Hilfestellung
+Käufer-Checkliste: worauf bei Kauf oder Sanierung achten
+FAQ: häufige Fragen zu Energieberatung, Förderungen und Gebäudetechnik
+Leitfäden / Sanierungsfahrplan-Checkliste: Schritt-für-Schritt Anleitungen
+Bilder / Visualisierungsvorschläge:
+Icons für Gesetz, Förderung, Tools, Checklisten
+Illustrationen von Bauteilen (Fenster, Dämmung, Heizung)
+Grafiken zu Einsparungen / Förderquoten
+Beispielhafte Screenshots von Rechnern oder Checklisten
+Allgemeine Hinweise zu Bildern & Visualisierung
+Einheitlicher Bildstil für alle Seiten: klar, modern, vector-/Icon-basiert
+Kombination aus Illustrationen, Diagrammen und Fotos
+Infografiken besonders für Energieverbrauch, Förderquoten und Projektabläufe
+Beispielbilder für Vorher-Nachher-Szenarien, um den Nutzen der Beratung/Services zu zeigen

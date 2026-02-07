@@ -1,0 +1,12 @@
+node_modules/
+.env
+dist/
+.vscode/
+.DS_Store
+# Replit
+.config/
+.replit
+replit.nix
+
+# Environment
+.env
