@@ -1,8 +1,8 @@
 import "dotenv/config";
-import express, { type Request, Response, NextFunction } from "express";
+import express, { Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
-import { serveStatic } from "./static";
 import { createServer } from "http";
+import path from "path";
 
 const app = express();
 const httpServer = createServer(app);
@@ -17,7 +17,7 @@ declare module "http" {
 // Middleware für JSON und URL Encoded
 app.use(
   express.json({
-    verify: (req, _res, buf) => {
+    verify: (req: Request, _res: Response, buf: Buffer) => {
       req.rawBody = buf;
     },
   }),
@@ -35,15 +35,18 @@ export function log(message: string, source = "express") {
   console.log(`${formattedTime} [${source}] ${message}`);
 }
 
-// Request Logging
-app.use((req, res, next) => {
+// Request Logging Middleware für /api
+app.use((req: Request, res: Response, next: NextFunction) => {
   const start = Date.now();
   let capturedJsonResponse: Record<string, any> | undefined;
 
-  const originalResJson = res.json;
-  res.json = function (bodyJson, ...args) {
+  // Original res.json speichern
+  const originalResJson = res.json.bind(res);
+
+  // Override res.json
+  res.json = function (bodyJson: any) {
     capturedJsonResponse = bodyJson;
-    return originalResJson.apply(res, [bodyJson, ...args]);
+    return originalResJson(bodyJson);
   };
 
   res.on("finish", () => {
@@ -60,6 +63,7 @@ app.use((req, res, next) => {
 
 (async () => {
   try {
+    // Routes registrieren
     await registerRoutes(httpServer, app);
 
     // Error Middleware
@@ -70,20 +74,26 @@ app.use((req, res, next) => {
       throw err;
     });
 
-    // Static-Serving für Production
+    // Production Static-Serving
     if (process.env.NODE_ENV === "production") {
-      serveStatic(app);
+      const distPath = path.join(process.cwd(), "dist/public");
+      app.use(express.static(distPath));
+      app.get("*", (_req, res) => {
+        res.sendFile(path.join(distPath, "index.html"));
+      });
     } else {
-      // Dev: Vite
+      // Development: Vite HMR
       const { setupVite } = await import("./vite");
       await setupVite(httpServer, app);
     }
 
     // Server starten
     const port = parseInt(process.env.PORT || "5000", 10);
-    const host = process.env.HOST || "127.0.0.1";
+    const host = process.env.HOST || "0.0.0.0";
 
-    httpServer.listen({ port, host }, () => log(`Server running at http://${host}:${port}`));
+    httpServer.listen({ port, host }, () =>
+      log(`Server running at http://${host}:${port}`)
+    );
   } catch (err) {
     console.error("Fehler beim Starten des Servers:", err);
     process.exit(1);
