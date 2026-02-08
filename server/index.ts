@@ -40,10 +40,9 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   const start = Date.now();
   let capturedJsonResponse: Record<string, any> | undefined;
 
-  // Original res.json speichern
   const originalResJson = res.json.bind(res);
 
-  // Override res.json
+  // fix: kein ...args mehr
   res.json = function (bodyJson: any) {
     capturedJsonResponse = bodyJson;
     return originalResJson(bodyJson);
@@ -63,7 +62,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 (async () => {
   try {
-    // Routes registrieren
     await registerRoutes(httpServer, app);
 
     // Error Middleware
@@ -71,7 +69,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
       const status = err.status || err.statusCode || 500;
       const message = err.message || "Internal Server Error";
       res.status(status).json({ message });
-      throw err;
     });
 
     // Production Static-Serving
@@ -82,12 +79,11 @@ app.use((req: Request, res: Response, next: NextFunction) => {
         res.sendFile(path.join(distPath, "index.html"));
       });
     } else {
-      // Development: Vite HMR
+      // Dev: Vite HMR
       const { setupVite } = await import("./vite");
       await setupVite(httpServer, app);
     }
 
-    // Server starten
     const port = parseInt(process.env.PORT || "5000", 10);
     const host = process.env.HOST || "0.0.0.0";
 
