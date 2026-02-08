@@ -1,30 +1,37 @@
 import "dotenv/config";
-import express, { Request, Response, NextFunction } from "express";
-import { registerRoutes } from "./routes";
+import express, { type Request, type Response, type NextFunction } from "express";
 import { createServer } from "http";
 import path from "path";
+import { registerRoutes } from "./routes";
 
 const app = express();
 const httpServer = createServer(app);
 
-// Typ-Erweiterung für rawBody
+/* -------------------------------------------------------------------------- */
+/*                              RawBody Typing                                */
+/* -------------------------------------------------------------------------- */
 declare module "http" {
   interface IncomingMessage {
-    rawBody: unknown;
+    rawBody?: Buffer;
   }
 }
 
-// Middleware für JSON und URL Encoded
+/* -------------------------------------------------------------------------- */
+/*                               Middlewares                                  */
+/* -------------------------------------------------------------------------- */
 app.use(
   express.json({
-    verify: (req: Request, _res: Response, buf: Buffer) => {
+    verify: (req, _res, buf) => {
       req.rawBody = buf;
     },
   }),
 );
+
 app.use(express.urlencoded({ extended: false }));
 
-// Logging Funktion
+/* -------------------------------------------------------------------------- */
+/*                                   Logging                                  */
+/* -------------------------------------------------------------------------- */
 export function log(message: string, source = "express") {
   const formattedTime = new Date().toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -35,63 +42,80 @@ export function log(message: string, source = "express") {
   console.log(`${formattedTime} [${source}] ${message}`);
 }
 
-// Request Logging Middleware für /api
+/* -------------------------------------------------------------------------- */
+/*                        API Request Logging (/api)                           */
+/* -------------------------------------------------------------------------- */
 app.use((req: Request, res: Response, next: NextFunction) => {
   const start = Date.now();
-  let capturedJsonResponse: Record<string, any> | undefined;
+  let capturedJsonResponse: unknown;
 
-  const originalResJson = res.json.bind(res);
+  const originalJson = res.json.bind(res);
 
-  // fix: kein ...args mehr
-  res.json = function (bodyJson: any) {
-    capturedJsonResponse = bodyJson;
-    return originalResJson(bodyJson);
+  res.json = (body: any) => {
+    capturedJsonResponse = body;
+    return originalJson(body);
   };
 
   res.on("finish", () => {
+    if (!req.path.startsWith("/api")) return;
+
     const duration = Date.now() - start;
-    if (req.path.startsWith("/api")) {
-      let logLine = `${req.method} ${req.path} ${res.statusCode} in ${duration}ms`;
-      if (capturedJsonResponse) logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
-      log(logLine);
+    let line = `${req.method} ${req.path} ${res.statusCode} in ${duration}ms`;
+
+    if (capturedJsonResponse) {
+      try {
+        line += ` :: ${JSON.stringify(capturedJsonResponse)}`;
+      } catch {
+        /* ignore circular JSON */
+      }
     }
+
+    log(line);
   });
 
   next();
 });
 
+/* -------------------------------------------------------------------------- */
+/*                               App Bootstrap                                 */
+/* -------------------------------------------------------------------------- */
 (async () => {
   try {
     await registerRoutes(httpServer, app);
 
-    // Error Middleware
-    app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-      const status = err.status || err.statusCode || 500;
-      const message = err.message || "Internal Server Error";
-      res.status(status).json({ message });
-    });
+    /* ---------------------------- Error Handling --------------------------- */
+    app.use(
+      (err: any, _req: Request, res: Response, _next: NextFunction) => {
+        const status = err?.status ?? err?.statusCode ?? 500;
+        const message = err?.message ?? "Internal Server Error";
+        res.status(status).json({ message });
+      },
+    );
 
-    // Production Static-Serving
+    /* --------------------------- Production Build --------------------------- */
     if (process.env.NODE_ENV === "production") {
-      const distPath = path.join(process.cwd(), "dist/public");
+      const distPath = path.resolve(process.cwd(), "dist/public");
+
       app.use(express.static(distPath));
+
       app.get("*", (_req, res) => {
         res.sendFile(path.join(distPath, "index.html"));
       });
     } else {
-      // Dev: Vite HMR
+      /* ------------------------------ Dev (Vite) ---------------------------- */
       const { setupVite } = await import("./vite");
       await setupVite(httpServer, app);
     }
 
-    const port = parseInt(process.env.PORT || "5000", 10);
+    /* ------------------------------ Start Server ---------------------------- */
+    const port = Number(process.env.PORT) || 5000;
     const host = process.env.HOST || "0.0.0.0";
 
-    httpServer.listen({ port, host }, () =>
-      log(`Server running at http://${host}:${port}`)
-    );
-  } catch (err) {
-    console.error("Fehler beim Starten des Servers:", err);
+    httpServer.listen(port, host, () => {
+      log(`Server running at http://${host}:${port}`);
+    });
+  } catch (error) {
+    console.error("❌ Server startup failed:", error);
     process.exit(1);
   }
 })();
