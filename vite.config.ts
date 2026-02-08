@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  root: "client",                // root ist der client-Ordner
+  root: "client",                // root = client, dort liegt index.html
   plugins: [react()],
   resolve: {
     alias: {
@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "dist/public"), // Build nach dist/public
+    outDir: path.resolve(__dirname, "dist/public"), // Build → dist/public
     emptyOutDir: true,
   },
 });
